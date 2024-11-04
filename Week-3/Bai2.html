@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form UI</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centering the login container */
+        body {
+            display: block;
+            text-align: center;
+            background-color: #f0f4f8;
+            padding-top: 100px;
+        }
+
+        /* Styling the login container */
+        .login-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .login-container h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #6366f1;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Styling form inputs */
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Checkbox and label styling */
+        .remember-me {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6366f1;
+            border: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #4f46e5;
+        }
+
+        /* Links styling */
+        .login-container .links {
+            font-size: 14px;
+            color: #6366f1;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-container .links a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Form UI</h2>
+        <p>Please enter your user information.</p>
+        <form>
+            <input type="email" placeholder="Enter email here" required>
+            <input type="password" placeholder="Password" required>
+            <label class="remember-me">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="links">
+            <a href="#">Create An Account</a>
+            <a href="#">Forgot your password?</a>
+        </div>
+    </div>
+</body>
+</html>
