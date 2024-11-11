@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfde7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: white;
+            width: 70%;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #ddd;
+            padding: 20px;
+        }
+        .product-header {
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .product-info h2 {
+            font-size: 24px;
+            color: #555;
+            margin: 0;
+        }
+        .product-info p {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0;
+        }
+        .price {
+            color: #e53935;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .rating {
+            color: #ffb400;
+            font-size: 18px;
+        }
+        .button {
+            background-color: #e53935;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product-details, .additional-info {
+            margin-top: 20px;
+        }
+        .details-list, .features-list, .usage-instructions, .special-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            margin-left: 20px;
+        }
+        #line1{
+            color: #ec8a39;
+        }
+        .features{
+            color: #1091e1;
+        }
+        .info-button {
+            display: inline-block;
+            background-color: #80bef5;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            text-align: left;
+        }
+        .info-button span {
+            margin-right: 8px;
+        }
+        
+        .share-buttons {
+            text-align: left; 
+            margin-top: 20px;
+        }
+        .share-button {
+            display: inline-block;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            text-decoration: none;
+        }
+        .related-products {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #fdfde7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .related-products-item {
+            display: inline-block;
+            width: 48%;
+            margin: 1%;
+            vertical-align: top;
+            background-color: #fdfde7;
+            padding: 10px;
+        }
+        .related-products-item img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+            display: inline;
+            vertical-align: middle;
+        }
+        .related-products-item span {
+            display: inline;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .review-section {
+            margin-top: 20px;
+        }
+        .review-section textarea {
+            width: 70%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            resize: vertical;
+        }
+        .review-section button {
+            margin-top: 10px;
+            background-color: #1e88e5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .special-features{
+            color: #c62826d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-header">
+            <img src="product-a.jpg" alt="Product A" class="product-image">
+        </div>
+        <div class="product-info">
+            <h2>Sản Phẩm A</h2>
+            <p>Đây là mô tả của sản phẩm A. Nó rất tuyệt vời!</p>
+            <p class="price">$49.99</p>
+            <p class="rating">⭐ 4.0 (120 đánh giá)</p>
+            <button class="button">Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product-details">
+            <h3>Thông tin chi tiết:</h3>
+            <ul class="details-list">
+                <li>Chất liệu: Vải cotton</li>
+                <li>Màu sắc: Đỏ, Xanh, Vàng</li>
+                <li>Kích thước: S, M, L, XL</li>
+                <li>Thương hiệu: Thương Hiệu X</li>
+            </ul>
+        </div>
+        <div class="additional-info">
+            <h3>Thông tin bổ sung:</h3>
+            <button class="info-button"><span>🔒</span> Thanh toán an toàn</button>
+            <button class="info-button"><span>📞</span> Hỗ trợ khách hàng 24/7</button>
+            <button class="info-button"><span>🔐</span> Đảm bảo an toàn thông tin</button>
+            <button class="info-button"><span>✔️</span> Cam kết chất lượng</button>
+        </div>
+        <div class="features">
+            <h3 >Tính năng nổi bật:</h3>
+            <div class="features-list">
+                <p><i class="fas fa-check-circle icon special-item"></i>Thiết kế hiện đại</p>
+                <p><i class="fas fa-check-circle icon special-item"></i>Dễ dàng bảo quản</p>
+                <p><i class="fas fa-check-circle icon special-item"></i>Thích hợp cho mọi dịp</p>
+                <p><i class="fas fa-check-circle icon special-item"></i>Khả năng thấm hút tốt</p>
+            </div>
+        </div>
+        <div class="usage-instructions">
+            <h3 id="line1">Hướng dẫn sử dụng:</h3>
+            <h4><b>Để đảm bảo sản phẩm luôn trong tình trạng tốt nhất, hãy làm theo các hướng dẫn sau:</b></h4>
+            <ul class="usage-instructions">
+                <li>Giặt ở nhiệt độ thấp</li>
+                <li>Tránh ánh nắng mặt trời trực tiếp</li>
+            </ul>
+        </div>
+        <div class="special-features">
+            <h3>Tính năng đặc biệt:</h3>
+            
+                <p><i class="fas fa-star icon special-item" ></i>Công nghệ chống nhăn</p>
+                <p><i class="fas fa-star icon special-item" ></i>Vải thoáng khí</p>
+                <p><i class="fas fa-star icon special-item" ></i>Thiết kế bền vững</p>
+            
+        </div>
+        <div class="share-buttons">
+            <h3>Chia sẻ sản phẩm:</h3>
+            <a href="#" class="share-button" style="background-color: #3b5998;">Facebook</a>
+            <a href="#" class="share-button" style="background-color: #1da1f2;">Twitter</a>
+            <a href="#" class="share-button" style="background-color: #e4405f;">Instagram</a>
+        </div>
+        <div class="review-section">
+            <h3>Đánh giá sản phẩm:</h3>
+            <textarea placeholder="Nhập đánh giá của bạn..."></textarea>
+            <button>Gửi đánh giá</button>
+        </div>
+    </div>
+    <div class="related-products">
+        <h3>Sản Phẩm Liên Quan</h3>
+        <div class="related-products-item">
+            <img src="product-a.jpg" alt="Sản Phẩm B">
+            <span>Sản Phẩm B</span>
+            <span>$39.99</span>
+        </div>
+        <div class="related-products-item">
+            <img src="product-a.jpg" alt="Sản Phẩm C">
+            <span>Sản Phẩm C</span>
+            <span>$29.99</span>
+        </div>
+    </div>
+</body>
+</html>
