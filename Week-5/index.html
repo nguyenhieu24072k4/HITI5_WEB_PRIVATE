@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our New Collection</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f3eb;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #f5dcb3;
+    padding: 20px 10px;
+    position: relative;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .search-box input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+  }
+  
+  .category {
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    color: rgb(234, 18, 18);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category:hover, .category.active {
+    background-color: #e38d3c;
+    color: #ffffff;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .order-btn {
+    background-color: #ffa14a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-btn:hover {
+    background-color: #e38d3c;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Our New Collection</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <button class="category active">New Collection</button>
+      <button class="category">Special Promo</button>
+      <button class="category">Casual Bag</button>
+      <button class="category">Party Bag</button>
+    </aside>
+
+    <main class="products">
+      <div class="product-card">
+        <img src="beige-bag.jpg" alt="Beige Casual Bag">
+        <p>Beige Casual Bag</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="brown-bag.jpg" alt="Brown Casual Bag">
+        <p>Brown Casual Bag</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="orange-bag.jpg" alt="Orange Casual Bag">
+        <p>Orange Casual Bag</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

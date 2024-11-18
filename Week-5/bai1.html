@@ -1,0 +1,251 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        *{
+            
+            margin: 0;
+
+        }
+        body{
+            background-color: bisque;
+
+        }
+        .container{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+                
+        }
+        .line1{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+        .line1 input{
+            margin: auto;
+            border-radius: 10px;
+           
+        }
+        .line2{
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+        }
+        .btn1{  
+            color:black;
+            border: none; 
+        }
+        .btn1:hover{
+            background-color: yellow ;
+            border-radius: 2px;
+
+        }
+        .line3.p{
+            text-align: center;
+            display: flex;
+            background-color: yellow;
+            border-radius: 1px;
+            
+        }
+        .line4{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .sp{
+            text-align: center;
+            background-color: yellow;
+            color: black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+     <div class="line1">
+       <input type="text" name="search" placeholder="Search"> 
+        <div>
+            <button  class="btn1">Home</button>
+            <button  class="btn1">Special Offer</button>
+            <button  class="btn1">FAQ</button>
+        
+        </div>
+        </div>
+        <div class="line2">
+            <div class="ptgr"> 
+                <img src="anh1.png"  >
+            </div>
+            <div> 
+                <h1>Sản phẩm 1</h1>
+                <p>Mô tả jsdbfjsfbksafndklsndfjsdbgfjkdskjdsb</p>
+                <button class="btn1">About us</button>
+            </div>
+        </div>
+        <div class="line3"><p>SHOP BY COLLECTION</p></div>
+        <div class="line4">
+            <div>
+                <div ><img src="anh1.png" alt="không tìm thấy ảnh"></div>
+                <P class="sp"><b>FLOWER POTS</b></P>
+            </div>
+            <div>
+                <div><img src="anh1.png" alt="không tìm thấy ảnh"></div>
+                <P class="sp"><b>FLOWER POTS</b></P>
+            </div>
+            <div>
+                <div><img src="anh1.png" alt="không tìm thấy ảnh"></div>
+                <P class="sp"><b>FLOWER POTS</b></P>
+            </div>
+        </div>
+        
+     
+    </div>
+     
+</body>
+</html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+        }
+        .line1 {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .line1 input {
+            border-radius: 10px;
+            padding: 8px;
+            width: 200px;
+        }
+        .btn1 {
+            color: black;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn1:hover {
+            background-color: yellow;
+            border-radius: 2px;
+        }
+        .line2 {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        .line2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .line3 {
+            width: 100%;
+            text-align: center;
+            background-color: yellow;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .line4 {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .line4 div {
+            text-align: center;
+        }
+        .line4 img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .sp {
+            background-color: yellow;
+            color: black;
+            border-radius: 4px;
+            padding: 5px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line1">
+            <input type="text" name="search" placeholder="Search...">
+            <div>
+                <button class="btn1">Home</button>
+                <button class="btn1">Special Offer</button>
+                <button class="btn1">FAQ</button>
+            </div>
+        </div>
+        
+        <div class="line2">
+            <div class="ptgr"> 
+                <img src="anh1.png" alt="Product image">
+            </div>
+            <div> 
+                <h1>Sản phẩm 1</h1>
+                <p>Mô tả: Nội dung giới thiệu về sản phẩm.</p>
+                <button class="btn1">About us</button>
+            </div>
+        </div>
+        
+        <div class="line3">SHOP BY COLLECTION</div>
+        
+        <div class="line4">
+            <div>
+                <img src="anh1.png" alt="Flower pots">
+                <p class="sp"><b>FLOWER POTS</b></p>
+            </div>
+            <div>
+                <img src="anh1.png" alt="Flower pots">
+                <p class="sp"><b>FLOWER POTS</b></p>
+            </div>
+            <div>
+                <img src="anh1.png" alt="Flower pots">
+                <p class="sp"><b>FLOWER POTS</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
