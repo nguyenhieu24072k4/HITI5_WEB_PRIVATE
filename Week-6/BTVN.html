@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa 5 cánh</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fce4ec;
+        }
+
+        .rose {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .petal {
+            position: absolute;
+            width: 100px;
+            height: 140px;
+            background: red;
+            border-radius: 50% 50% 0 0;
+            transform-origin: bottom center;
+            animation: petal-bloom 3s ease-in-out infinite;
+        }
+
+        .petal:nth-child(1) { transform: rotate(0deg) translateY(-20px); }
+        .petal:nth-child(2) { transform: rotate(72deg) translateY(-20px); }
+        .petal:nth-child(3) { transform: rotate(144deg) translateY(-20px); }
+        .petal:nth-child(4) { transform: rotate(216deg) translateY(-20px); }
+        .petal:nth-child(5) { transform: rotate(288deg) translateY(-20px); }
+
+        @keyframes petal-bloom {
+            0% {
+                transform: scale(0.5) rotate(var(--rotate, 0deg)) translateY(-20px);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.2) rotate(var(--rotate, 0deg)) translateY(-20px);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1) rotate(var(--rotate, 0deg)) translateY(-20px);
+                opacity: 0.8;
+            }
+        }
+
+        .center {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #ff80ab;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: center-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes center-pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="rose">
+        <!-- Các cánh hoa -->
+        <div class="petal" style="--rotate: 0deg;"></div>
+        <div class="petal" style="--rotate: 72deg;"></div>
+        <div class="petal" style="--rotate: 144deg;"></div>
+        <div class="petal" style="--rotate: 216deg;"></div>
+        <div class="petal" style="--rotate: 288deg;"></div>
+        <!-- Nhụy hoa -->
+        <div class="center"></div>
+    </div>
+</body>
+</html>

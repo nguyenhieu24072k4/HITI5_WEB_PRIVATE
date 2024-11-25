@@ -1,0 +1,399 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* HEADER */
+        .con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .con1 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .con1 div {
+            cursor: pointer;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #db7a34;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b5692b;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 100px;
+            background-color: #f4f4f4;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #db7a34;
+        }
+
+        .relative-box {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .relative-box img {
+            position: absolute;
+        }
+
+        .img1 {
+            width: 100%;
+            z-index: 1;
+        }
+
+        .img2 {
+            width: 80%;
+            top: 20px;
+            left: 30px;
+            z-index: 2;
+        }
+
+        .img3 {
+            width: 50%;
+            bottom: 10px;
+            left: 50px;
+            z-index: 3;
+        }
+
+        .img4 {
+            width: 60%;
+            top: 50px;
+            right: 20px;
+            z-index: 3;
+        }
+
+        /* SECTION 2 */
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 100px;
+        }
+
+        .section img {
+            width: 400px;
+            height: auto;
+        }
+
+        .section-text {
+            max-width: 600px;
+            padding-left: 50px;
+        }
+
+        .section-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section-text p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.mission-section, .testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f8f9fc;
+}
+
+.mission-section {
+    background: #eef3fb;
+}
+
+.mission-text {
+    max-width: 50%;
+}
+
+.subtitle {
+    color: orange;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.mission-stats, .testimonials-cards {
+    display: flex;
+    gap: 20px;
+}
+.mission-stats .stat-card {
+    width: 300px; /* Adjust width to fit layout */
+    height: auto; /* Keep aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px; /* Optional for rounded edges */
+    background: #fff; /* Optional for card background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for depth */
+}
+
+.mission-stats .stat-card img {
+    max-width: 100%;
+    height: auto; /* Ensures the image scales correctly */
+}
+
+.testimonials-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 100px;
+            background-color: #ffffff;
+        }
+
+        .testimonials-images {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .testimonials-images .card {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card1 {
+            top: 0;
+            left: 75px;
+        }
+
+        .card2 {
+            bottom: 0;
+            left: 0;
+        }
+
+        .card3 {
+            bottom: 0;
+            right: 0;
+        }
+
+        .testimonials-summary {
+            max-width: 50%;
+            padding-left: 50px;
+        }
+
+        .testimonials-summary p.subtitle {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .testimonials-summary h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonials-summary .description {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .testimonials-summary .btn {
+            padding: 10px 20px;
+            background: orange;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .testimonials-summary .btn:hover {
+            background-color: #b5651d;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="con">
+        <div><img src="Union.png" alt="Logo" width="50"></div>
+        <div><b>BEYOND</b></div>
+        <div class="con1">
+            <div>Home</div>
+            <div>Why us?</div>
+            <div>Features</div>
+            <div>Pricing</div>
+            <div>Contact</div>
+        </div>
+        <div class="con1">
+            <div><button>Login</button></div>
+            <div><button>Sign up</button></div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div>
+            <h1>We Are The Best Digital Marketing</h1>
+            <p>
+                You need to get positive results when you spend hard-earned revenue
+                and time on any marketing effort. Great returns on marketing and
+                promotions.
+            </p>
+            <div class="hero-buttons">
+                <button>Get Started</button>
+                <div class="triangle"></div>
+                <div>Watch Video</div>
+            </div>
+        </div>
+        <div class="relative-box">
+            <img src="base.png" class="img1" alt="Base Image">
+            <img src="Mask Group.png" class="img2" alt="Mask Group">
+            <img src="card.png" class="img3" alt="Card Image">
+            <img src="Abstract.png" class="img4" alt="Abstract Image">
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+        <img src="Mask Group 2.png" alt="Marketing Image">
+        <div class="section-text">
+            <h1>Top #1 Marketing Agency in the World</h1>
+            <p>
+                Nunc venenatis lorem sed risus tristique, sit amet pellentesque
+                turpis porta. Curabitur eleifend turpis non neque ullamcorper
+                vehicula.
+            </p>
+            <button>Get In Touch</button>
+        </div>
+    </div>
+    <div class="mission-section">
+        <div class="mission-text">
+            <p class="subtitle">OUR MISSION & GOAL</p>
+            <h1>Realize Your Business Goals For Profit</h1>
+            <p class="description">Nunc venenatis lorem sed risus tristique. Duls porta, rutrum tempus, lectus risus iMDeridet tellus, sed faucibus sum ipsum ncn neque. Curubilu el eleirend.</p>
+            <button class="btn">Get in Touch</button>
+        </div>
+        <div class="mission-stats">
+            <div class="stat-card">
+                <img src="image & card.png" alt="">
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+        <div class="testimonials-images">
+            <div class="card card1">
+                <img src="card-1.png" alt="Card 1" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card card2">
+                <img src="Card-2.png" alt="Card 2" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card card3">
+                <img src="Card-3.png" alt="Card 3" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div class="testimonials-summary">
+            <p class="subtitle">TESTIMONIALS</p>
+            <h2>Client’s Feedback</h2>
+            <p class="description">Why I say okl chap that is, sprifting aff his rut car blimey valmor gooxo blaka...</p>
+            <p class="count">450+ Client’s Feedback</p>
+            <button class="btn">Get in Touch</button>
+        </div>
+    </div>
+  
+</body>
+</html>
+
+ 
