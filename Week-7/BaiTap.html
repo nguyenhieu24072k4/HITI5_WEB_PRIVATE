@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ff7f7f, #7f7fff);
+        }
+
+        .container {
+            display: grid;
+            width: 80%; /* Điều chỉnh kích thước tổng */
+            height: 80%;
+            grid-template-columns: repeat(7, 1fr); /* 7 cột */
+            grid-template-rows: repeat(9, 1fr); /* 9 hàng */
+            gap: 1px; /* Khoảng cách giữa các ô */
+        }
+
+        .container div {
+            width: 100%; /* Chiếm toàn bộ ô lưới */
+            height: 100%; 
+        }
+
+        .item-1 {
+            background-color: rgb(214, 231, 213);
+            grid-area: 1 / 1 / 2 / 8; /* Kéo dài toàn bộ hàng đầu tiên */
+        }
+
+        .item-2 {
+            background-color: #fff3cd;
+            grid-area: 2 / 1 / 6 / 5;
+        }
+
+        .item-3 {
+            background-color: rgb(236, 173, 213);
+            grid-area: 2 / 5 / 3 / 7;
+        }
+
+        .item-4 {
+            background-color: rgb(255, 159, 127);
+            grid-area: 2 / 7 / 4 / 8;
+        }
+
+        .item-5 {
+            background-color: rgb(236, 173, 213);
+            grid-area: 3 / 5 / 6 / 6;
+        }
+
+        .item-6 {
+            background-color: rgb(200, 200, 200); /* Thêm màu để hiển thị */
+            grid-area: 3 / 6 / 6 / 7;
+        }
+
+        .item-7 {
+            background-color: rgb(173, 216, 230);
+            grid-area: 9 / 1 / 10 / 8;
+        }
+
+        .item-8 {
+            background-color: rgb(144, 238, 144);
+            grid-area: 6 / 1 / 7 / 4;
+        }
+
+        .item-9 {
+            background-color: rgb(255, 228, 181);
+            grid-area: 6 / 4 / 8 / 7;
+        }
+
+        .item-10 {
+            background-color: rgb(250, 128, 114);
+            grid-area: 8 / 4 / 9 / 7;
+        }
+
+        .item-11 {
+            background-color: rgb(152, 251, 152);
+            grid-area: 4 / 7 / 9 / 8;
+        }
+
+        .item-12 {
+            background-color: rgb(240, 230, 140);
+            grid-area: 7 / 1 / 9 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+        <div class="item-7"></div>
+        <div class="item-8"></div>
+        <div class="item-9"></div>
+        <div class="item-10"></div>
+        <div class="item-11"></div>
+        <div class="item-12"></div>
+    </div>
+</body>
+</html>
