@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<body>
+    <Script>
+        let day = prompt("Hôm nay là ngày gì?").trim();
+day = day.toLowerCase(); // Chuyển đổi chữ in hoa thành chữ thường để so sánh
+
+if (day === "saturday" || day === "sunday") {
+    alert(day.charAt(0).toUpperCase() + day.slice(1) + " is a weekend.");
+} else {
+    alert(day.charAt(0).toUpperCase() + day.slice(1) + " is a working day.");
+}
+
+    </Script>
+</body>
+</html>

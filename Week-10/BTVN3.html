@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        let height = 6; // Chiều cao của phần tam giác cây thông
+        let trunkHeight = 3; // Chiều cao của phần thân cây
+        let trunkWidth = 3; // Chiều rộng của phần  nửa thân cây
+
+        // Vẽ phần tán cây
+        for (let i = 0; i < height; i++) {
+            let spaces = " ".repeat(height - i - 1); // Tạo khoảng trắng
+            let stars = "* ".repeat(i + 1); // Tạo ngôi sao
+            console.log(spaces + stars.trim());
+        }
+
+        // Vẽ phần thân cây
+        for (let i = 0; i < trunkHeight; i++) {
+            let spaces = " ".repeat(height - Math.floor(trunkWidth / 2) - 1); // Tạo khoảng trắng
+            let stars = "* ".repeat(trunkWidth / 2); // Tạo ngôi sao
+            console.log(spaces + "*".repeat(trunkWidth));
+        }
+
+    </script>
+</body>
+</html>

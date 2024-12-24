@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+    menu{
+      display: flex;
+        width: Hug (180px)px;
+    height: Hug (154px)px;
+    top: 108px;
+    left: 1224px;   
+    padding: 16px 0px 0px 0px;
+    gap: 16px;
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+
+    }
+    p{
+        font-size: ;
+        color:white;
+
+    }
+    p:hover{
+        color: yellow;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    header {
+        position: relative;
+        background-position: center;
+        background-image: url(./images/banner.jpg) ;
+        width: 100%;
+        height: 964px;
+    }
+    .logo{
+
+        top: 10px;
+        left: 10px;
+    }
+    .content{
+        position: absolute;
+        top: 628.26px;
+        left: 36px;
+        gap: 32px;
+        opacity: 0px;
+        bottom: 0;
+
+    }
+
+    .content1{
+        
+        color: white;
+        width: 1066px;
+        height: 71px;
+        size: 56px;
+    }
+    .content2{
+        color: white;
+        width: 1006;
+        height: 120px;
+        size: 24px;
+    }
+
+ 
+    .page2{
+
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        box-shadow: rgb();
+        border-radius: 5px;
+        width: Fixed (1,060px)px;
+        height: Hug (61px)px;
+        top: 1104px;
+        left: 190px;
+        gap: 48px;
+        opacity: 0px;
+
+        
+    }
+    .anh2{
+        width: 286px;
+        height: 336px;
+        padding: 10px;
+        gap: 0px;
+        border-radius: 8px 0px 0px 0px;
+        opacity: 0px;
+        box-shadow: 0px 0px 4px 2px rgba(111, 111, 111, 0.25);
+
+    }
+    .tieude{
+        text-align: center;
+        font-size: 48px;
+        color: black;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+    }
+  
+    .page3{
+        width: 100%;
+        height: auto;
+
+    }
+    .page3 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5cqh;
+        grid-row-gap: 5px;
+        }
+        
+        .div1 { 
+            grid-area: 1 / 1 / 2 / 3; 
+            border: 1px solid rgba(164, 164, 164, 1)
+        }
+            
+        .div2 { 
+            grid-area: 1 / 3 / 2 / 5;
+            border: 1px solid rgba(164, 164, 164, 1) }
+        .div3 { 
+            grid-area: 1 / 5 / 2 / 7;
+            border: 1px solid rgba(164, 164, 164, 1) }
+        .div4 { 
+            grid-area: 2 / 2 / 3 / 4;
+            border: 1px solid rgba(164, 164, 164, 1) }
+        .div5 { 
+            grid-area: 2 / 4 / 3 / 6; 
+            border: 1px solid rgba(164, 164, 164, 1)}
+
+  
+    .page4{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(51,51,51);
+    }
+    .page4.img{
+        width:  50%;
+        height: 50%;
+    }
+    h1{
+        font-size: 40px;
+
+    }
+    h2{
+        font-size: 30px;
+        color: brown;
+    }
+    .content3{
+
+        font-size: 30px;
+        color:brown;
+
+    }
+
+    .page5{
+        display: flex;
+    }
+
+
+
+    .page6 {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+        .div9 { grid-area: 3 / 1 / 4 / 2; }
+        .div10 { grid-area: 3 / 2 / 4 / 3; }
+        .div11 { grid-area: 3 / 3 / 4 / 4; }
+        .div12 { grid-area: 3 / 4 / 4 / 5; }
+    
+        .page6.img{
+            border: 1px solid rgba(164, 164, 164, 1)
+        }
+            
+.const1{
+    color: black;
+    font-family: Be Vietnam Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.const2{
+    color: rgba(164, 164, 164, 1);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.77px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+        
+

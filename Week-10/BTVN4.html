@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>      
+    <script>
+        let input = prompt("Nhập các số, cách nhau bằng dấu phẩy (,):").trim();
+        let numbers = input.split(",").map(Number); // Tách chuỗi thành mảng số
+
+        // Khởi tạo các giá trị cần tìm
+        let min = numbers[0];
+        let soChan = 0;
+        let max = numbers[0]; 
+
+        // Duyệt qua mảng để tìm số lớn nhất, nhỏ nhất và đếm số chẵn
+        for (let num of numbers) {
+            if (num > max) max = num;
+            if (num < min) min = num;
+            if (num % 2 === 0) soChan++; // Kiểm tra số chẵn
+        }
+
+        // Hiển thị kết quả
+        alert(` Số lớn nhất: ${max}
+            Số nhỏ nhất: ${min}
+            Số chẵn: ${soChan}`);
+
+    </script>
+</body>
+</html>

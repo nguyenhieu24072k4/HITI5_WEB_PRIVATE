@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let month = prompt("Nhập tháng của bạn: ").trim();
+        month = month.toLowerCase(); // Chuyển đổi chữ in hoa thành chữ thường để so sánh
+
+// Số ngày của các tháng
+const daysInMonth = {
+    january: 31,
+    february: 28,
+    march: 31,
+    april: 30,
+    may: 31,
+    june: 30,
+    july: 31,
+    august: 31,
+    september: 30,
+    october: 31,
+    november: 30,
+    december: 31
+};
+
+if (daysInMonth[month]) {
+    let formattedMonth = month.charAt(0).toUpperCase() + month.slice(1);
+    alert(`${formattedMonth} has ${daysInMonth[month]} days.`);
+} else {
+    alert("Invalid month. Please enter a valid month name.");
+}
+
+    </script>
+</body>
+</html>
