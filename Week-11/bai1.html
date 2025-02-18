@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <div class="container"> 
+        <h1 class="title" id="first-title">First Title</h1>
+        <h1 class="title" id="second-title">Second Title</h1>
+        <h1 class="title" id="third-title">Third Title</h1>
+        <h1></h1>
+
+
+
+
+    </div> 
+  
+    
+    <script>
+        // const allTitles = document.getElementsByTagName("h1");
+/* Biến allTitles này là một HTMLCollections*/
+
+// console.log(allTitles); //HTMLCollections
+// console.log(allTitles.length); // Độ dài của HTMLCollections là 4
+
+// for (let i = 0; i < allTitles.length; i++) {
+//   console.log(allTitles[i]);
+// }
+/* Sử dụng vòng lặp để duyệt qua các thành phần trong HTMLCollections*/
+// const allTitles = document.getElementsByClassName("title");
+
+// console.log(allTitles); //HTMLCollections
+// console.log(allTitles.length); // 4
+
+// for (let i = 0; i < allTitles.length; i++) {
+//   console.log(allTitles[i]); // prints each elements in the HTMLCollection
+// }
+// let firstTitle = document.getElementById("first-title");
+// console.log(firstTitle); // <h1>First Title</h1>
+// let firstTitle = document.querySelector("h1"); // select the first available h1 element
+    // <h1>First Title</h1>
+    // let firstTitle = document.querySelectorAll(".container.title");
+    // // console.log([firstTitle]);
+    // for (let i = 0; i < firstTitle.length; i++) {
+    //     console.log(firstTitle[i]);
+    // }
+    //another way to setting an attribute
+    const titles = document.querySelectorAll("h1");
+    titles[2].style.color = "red"; // all titles will have 24px font size
+    titles[2].style.backgroundColor = "blue";
+    titles.forEach((title, i) => {
+  
+  if (i % 2 === 0) {
+    title.style.color = "green";
+  } else {
+    title.style.color = "red";
+  }
+});
+    // titles[3].classList.add("title", "header-title","class-test");
+    // titles[3].classList.remove("title", "header-title");
+    // const con = document.querySelector(".container");
+    // con.textContent = "Bang1";
+ 
+
+    // titles[3].textContent = "Fourth Title";
+    // console.log(titles);
+    //     const link = document.querySelector(a);
+    //     link.href ="yotube.com"
+    //     const image = document.querySelector("img");
+    //     image.src = "https://picsum.photos/200/300";
+    //     image.alt = "mo ta";
+    
+
+    </script>
+
+  </body>
+</html>

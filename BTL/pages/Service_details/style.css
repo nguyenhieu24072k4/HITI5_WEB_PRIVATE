@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.top_header {
+    padding: 10px 0;
+}
+
+.header_contact_link {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_contact_link li {
+    margin-right: 20px;
+}
+
+.contact_icon a {
+    margin-left: 10px;
+    color: #333;
+}
+
+/* Main header styles */
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav_list li {
+    margin: 0 15px;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Service details section */
+.service_details_section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlighted {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.highlight {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Statistics section */
+.statistics {
+    padding: 40px 20px;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2em;
+    color: #007bff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer_contact {
+    list-style: none;
+}
+
+.footer_contact li {
+    margin-bottom: 10px;
+}
+
+.footer_infor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer_infor_list {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer_infor_title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer_bottom_nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}

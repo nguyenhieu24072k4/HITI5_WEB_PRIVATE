@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+  <body>
+    <script>
+         const ul = document.createElement("ul");
+        let li;
+      for (let i = 0; i < 3; i++) {
+        li = document.createElement("li");
+        li.style.color = "green";
+        li.style.fontSize = "32px";
+        li.textContent =`Item  ${i + 1} `;
+        ul.appendChild(li);
+      }
+      
+      document.body.appendChild(ul);
+
+      const list = document.querySelector("li");
+      let l = document.querySelector(" ul li:last-child")
+    
+      ul.removeChild(l);
+
+    
+    </script>
+  </body>
+</html>

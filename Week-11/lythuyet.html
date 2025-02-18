@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    
+    <h1></h1>
+    <script>
+      //syntax
+    document.getElementsByClassName("classname");
+    document.getElementById("id");
+    // const allTitles = document.getElementsByTagName("h1");
+/* Biến allTitles này là một HTMLCollections*/
+
+console.log(allTitles); //HTMLCollections
+console.log(allTitles.length); // Độ dài của HTMLCollections là 4
+
+for (let i = 0; i < allTitles.length; i++) {
+  console.log(allTitles[i]);
+}
+/* Sử dụng vòng lặp để duyệt qua các thành phần trong HTMLCollections*/
+
+
+// Getting elements by using querySelector methods
+//querySelector
+// let firstTitle = document.querySelector("h1"); // select the first available h1 element
+// let firstTitle = document.querySelector("#first-title"); // select id with first-title
+let firstTitle = document.querySelector(".title"); // select the first available element with class title 
+
+  //querySelectorAll
+  // const allTitles = document.querySelectorAll('h1') # selects all the available h1 elements in the page
+
+console.log(allTitles.length) // 4
+for (let i = 0; i < allTitles.length; i++) {
+  console.log(allTitles[i])
+}
+
+//Adding attribute
+//syntax
+// .setAttribute(name, value)
+//another way to setting an attribute
+const titles = document.querySelectorAll("h1");
+titles[3].className = "title";
+titles[3].id = "fourth-title";
+    //4. classList
+    ////another way to setting an attribute: append the class, doesn't over ride
+// const titles = document.querySelectorAll("h1");
+// titles[3].classList.add("title", "header-title");
+
+
+    </script>
+  </body>
+</html

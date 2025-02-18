@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+//     function greet(name) {
+//         console.log(`Xin chào, ${name}!`);
+// }
+
+
+//     function sum(...numbers){
+//         let total = 0;
+//         for(i=0;i<numbers.length,i++){
+//             total += numbers[i];
+//         }
+//         return total;
+//     }
+//     console.log(sum(1,2,3,4))
+
+
+
+//     const multiply = (x, y) => {
+//   return x * y;
+// };
+
+// const phraseSplitterEs6 = (phrase) => phrase.split(" ");
+// console.log(phraseSplitterEs6("Love Codelearn")); // ["Love", "Codelearn"]
+
+// const hello = () => {
+//   console.log("Hello World");
+// };
+
+// function myFunction(param) {
+//   param("Khang");
+// }
+
+// function myCallback(name) {
+//   console.log(`Hello ${name}`);
+// }
+// myFunction(myCallback);
+
+// function deQUY( N){
+//     if(N == 0) return 1;
+//     return N * deQUY(N-1);
+
+// }
+
+// hello();
+
+const courses = [
+  { id: 1, name: "Javascript", coin: 200 },
+  { id: 2, name: "HTML, CSS", coin: 0 },
+  { id: 3, name: "PHP", coin: 100 },
+  { id: 4, name: "Angular", coin: 0 },
+];
+// const course = courses.find(course => course.coin === 0);
+// courses.forEach(function (course, index) {
+//   console.log(index, course);
+
+// });
+// var isFree = courses.every(function (course, index) {
+//   return course.coin === 0;
+// });
+
+// console.log(isFree);
+// var isFree1 = courses.some(function (course, index) {
+//   return course.coin === 0;
+// });
+
+// console.log(isFree1);
+// var course = courses.find(function (course, index) {
+//   return course.name === "Angular";
+// });
+
+// console.log(course);
+
+// var course1 = courses.filter(function (course, index) {
+//   return course.coin >= 100;
+// });
+
+// console.log(course1)
+
+
+
+
+let i=0;
+// function myCallback(accumulator,currentValue){
+//      i++;
+//      console.table({
+//         "Lượt Chạy" : i,
+//         "Lưu Trữ: " : accumulator,
+//         "Gia Tiền: " : currentValue.coin,
+//         "Tổng tiền: ":accumulator + currentValue.coin,
+
+//      });
+//      return accumulator + currentValue.coin;
+
+// }
+// function myReduce(arr, callback, initialValue) {
+//     let accumulator = initialValue || arr[0];
+//     let i = 0;
+//     arr.forEach(function (currentValue) {
+//         callback(accumulator, currentValue, i);
+//         i++;
+//         });
+//         return accumulator;
+//         }
+//         console.log(myReduce(numbers, myCallback, 0));
+// const sum =arr.reduce.((acc,value))
+
+
+        const arr= [1, 2, 3, 4, 5, 6,];
+
+
+        function customSome(arr , myCallback){
+            for(let i=0; i < arr.length; i++){
+                if(myCallback(arr[i], i,arr)){
+                    return true;
+                    }
+                
+        }   return false;
+
+        }
+        function myCallback(currentValue, index, originArray) {
+            return currentValue % 2 == 0;
+        }
+            
+
+                function customEvery(arr , myCallback){
+            for(let i=0; i < arr.length; i++){
+                if((myCallback(arr[i], i,arr))==false){
+                    return fale;
+                    }
+                
+        }   return true;
+        }
+
+        function customFind(arr, myCallback){
+            for(let i=0; i < arr.length; i++){
+                if(myCallback(arr[i], i,arr)){
+                    return arr[i];
+                    }
+            }
+        }
+        function customReduce(arr, myCallback, initialArray) {
+            let accumulator = initialArray || arr[0];
+            let i = 0;
+            arr.forEach(function (currentValue) {
+                accumulator = myCallback(accumulator, currentValue, i);
+                i++;
+                });
+                return accumulator;
+            }
+           
+
+        const resultSome = customSome(arr , myCallback);
+        console.log(resultSome);
+        const resultEvery = customSome(arr , myCallback);
+        console.log(resultEvery);
+        const resultFind = customSome(arr , myCallback);
+        console.log(resultFind);
+        const resultReduce = customSome(arr , myCallback);
+        console.log(resultReduce);
+
+
+
+</script>
+</html>
